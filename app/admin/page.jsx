@@ -16,12 +16,10 @@ export default function AdminPage(){
 
 
 
-    async function cadastrarLanche() {
-
-        e.preventDefault()
+    async function cadastrarLanche(e) {
         
         try {
-            const response = await fetch("http://localhost:3001/produtos", {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/produtos`, {
                 method:"POST", 
                 headers:{
                     "Content-Type":"application/json"
