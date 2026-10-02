@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Home() {
 
   async function cadastrar(e:any) {
-    e.preventDefault()
     alert("Produto cadastrado com sucesso!")
     
   }
